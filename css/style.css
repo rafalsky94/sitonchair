@@ -391,6 +391,15 @@ body {
     z-index: 4;
 }
 
+.price-list-box.active .price-list-box-circle-in-circle {
+    border: 2px solid #27C7AB;
+    background: #27C7AB;
+}
+
+.price-list-box.active .price-list-box-circle {
+    border: 2px solid #27C7AB;
+}
+
 /*  section contact us  */
 
 .contact-us {
