@@ -267,6 +267,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .price-list-box:nth-of-type(2) {
@@ -362,6 +363,32 @@ body {
 .price-list-box.active .price-list-box-price .price-text {
     color:#27C7AB
 
+}
+
+/*kółka w boxach*/
+
+.price-list-box-circle {
+    border: 2px solid #C2C2C2;
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top:-35px;
+    left: 140px;
+    background: #FFF;
+}
+
+.price-list-box-circle-in-circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #C2C2C2;
+    top:-22px;
+    left: 152px;
+    background: #C2C2C2;
+    position: absolute;
+    z-index: 4;
 }
 
 /*  section contact us  */
