@@ -370,6 +370,16 @@ body {
 
 }
 
+.contact-us .contact-us-title {
+    text-transform: uppercase;
+    border-bottom: 5px solid #27C7AB;
+    font-weight: 300;
+    padding-top: 40px;
+    font-size: 24px;
+    margin-right: 70%;
+    margin-bottom: 45px;
+}
+
 .contact-us-form {
     margin-top:40px;
     display: flex;
@@ -470,9 +480,10 @@ body {
 /* footer */
 
 .page-footer {
-    height: 120px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+    margin-top: 85px;
 }
 
 .page-footer .footer-copyright {
@@ -488,9 +499,12 @@ body {
 }
 
 .page-footer .footer-social {
-
+    display: inline-block;
 }
 
 .page-footer .footer-logo {
-    padding-right: 50px;
+    padding-left: 65px;
+}
+
+.page-footer .footer-right-panel {
 }
