@@ -2,13 +2,15 @@
     box-sizing:border-box;
 }
 
-/* -------------------------------------------------------------------------------- */
+
 /* globalne klasy */
-/* -------------------------------------------------------------------------------- */
+
+
 .container {
     width:1060px;
     margin:0 auto;
 }
+
 .btn {
     font-family: 'Raleway', sans-serif;
     border-radius:5px;
@@ -21,52 +23,52 @@
     display: inline-block;
     text-decoration: none;
 }
-.section-title {
-    /* tutaj dorobic wyglad tytulow sekcji */
-}
 
-
-/* -------------------------------------------------------------------------------- */
 /* layout */
-/* -------------------------------------------------------------------------------- */
+
 body {
     font-family: 'Raleway', sans-serif;
     color:#222;
 }
 
+/* page header */
 
-/* ---- page header ---- */
 .page-header {
     height:40px;
     background: #000;
     position: relative;
     z-index: 1;
 }
+
 .page-header .container {
     display: flex;
     justify-content: space-between;
 }
 
 .page-header .page-logo {
-    margin-top:5px;
+    margin-top: 7px;
     display: inline-block;
 }
 
 
-/* ---- page nav ---- */
+/* page nav */
+
 .page-nav {
 
 }
+
 .page-nav ul {
     list-style:none;
     padding:0;
     margin:0;
     text-align: right;
 }
+
 .page-nav li {
     display: inline-block;
     position: relative;
 }
+
 .page-nav li a {
     padding:0 10px;
     line-height: 39px;
@@ -78,6 +80,7 @@ body {
     font-weight: 600;
     font-size:12px;
 }
+
 .page-nav .page-nav-submenu {
     position: absolute;
     top: 55px;
@@ -89,6 +92,7 @@ body {
     visibility:hidden;
     transition: 0.5s opacity;
 }
+
 .page-nav .page-nav-submenu:before {
     content:'';
     width:0;
@@ -100,6 +104,7 @@ body {
     top:-20px;
     transform: translate(-50%, 0);
 }
+
 .page-nav .page-nav-submenu:after {
     content:''; /* to jest czarny dziubek z bordera */
     position: absolute;
@@ -108,14 +113,17 @@ body {
     width:100%;
     height:17px;
 }
+
 .page-nav li:hover .page-nav-submenu {
     opacity:1; /* pokazanie menu po najechaniu */
     visibility:visible;
 }
+
 .page-nav .page-nav-submenu li {
     display: block;
     text-align: left;
 }
+
 .page-nav .page-nav-submenu li a {
     height: 30px;
     line-height: 30px;
@@ -124,19 +132,22 @@ body {
     padding:0 20px;
 }
 
+/* page slider */
 
-/* ---- page slider ---- */
 .page-slider-cnt {
     background: linear-gradient(to bottom, #fafafa 0%, #d1ced7 100%);
     height:500px;
 }
+
 .page-slider-cnt .container {
     height:inherit;
 }
+
 .main-slider {
     display: flex;
     height:100%;
 }
+
 .main-slider-prev,
 .main-slider-next {
     width:50px;
@@ -147,11 +158,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .main-slider-cnt {
     background: yellow;
     flex-grow: 1;
     position: relative;
 }
+
 .main-slider-slide {
     position: absolute;
     left:0;
@@ -160,8 +173,8 @@ body {
     height:100%;
 }
 
+/* pictures list */
 
-/* ---- pictures list ---- */
 .pictures-list {
     height: 390px;;
 }
@@ -177,13 +190,16 @@ body {
     display: inline-block;
     overflow: hidden;
 }
+
 .picture-cnt img {
     position: relative;
     transition: 0.5s all;
 }
+
 .picture-cnt:hover img {
     transform: scale(1.2,1.2);
 }
+
 .picture-cnt .picture-cnt-description {
     position:absolute;
     padding:10px;
@@ -194,11 +210,13 @@ body {
     width:100%;
     transition: 0.5s all;
 }
+
 .picture-cnt .picture-cnt-title {
     border-bottom: 5px solid #27C7AB;
     margin-right: 55%;
     font-weight: bold;
 }
+
 .picture-cnt .picture-cnt-text {
     overflow: hidden;
     height:0;
@@ -213,17 +231,20 @@ body {
     border:1px solid #ddd;
     padding:10px;
 }
+
 .picture-cnt:hover .picture-cnt-text {
     height:190px;
     color:rgba(0,0,0,1);
 }
 
 
-/* ---- price list ---- */
+/* price list */
+
 .price-list {
     background: #F1F1F1;
     height: 725px;
 }
+
 .price-list-title {
     text-transform: uppercase;
     border-bottom: 5px solid #27C7AB;
@@ -233,9 +254,11 @@ body {
     margin-right: 70%;
     margin-bottom: 75px;
 }
+
 .price-list-cnt {
     display: flex;
 }
+
 .price-list-box {
     background: #f9f9f9;
     border:2px solid #D4D4D4;
@@ -245,9 +268,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .price-list-box:nth-of-type(2) {
     margin:0 35px;
 }
+
 .price-list-box .price-list-box-title {
     font-size:26px;
     text-align: center;
@@ -255,6 +280,7 @@ body {
     color:#27C7AB;
     margin-top:20px;
 }
+
 .price-list-box .price-list-box-price {
     display: flex;
     width:135px;
@@ -267,24 +293,29 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .price-list-box .price-list-box-price .price-cnt {
     display: flex;
     color:#C2C2C2;
 }
+
 .price-list-box .price-list-box-price .price-cnt .price {
     font-size:45px;
     font-weight: 600;
 }
+
 .price-list-box .price-list-box-price .price-cnt .small {
     font-size:16px;
     padding-top:15px;
 }
+
 .price-list-box .price-list-box-price .price-text {
     text-align: center;
     font-size:15px;
     text-transform: uppercase;
     color:#C2C2C2;
 }
+
 .price-list-box .price-list-box-points {}
 .price-list-box .price-list-box-points li {
     background: #E4E4E4;
@@ -293,47 +324,62 @@ body {
     padding:10px 0;
     color:#8F8F8F;
 }
+
 .price-list-box .price-list-box-points li:nth-of-type(even) {
     background: #F1F1F1;
 }
+
 .price-list-box .price-list-box-btn-cnt {
     font-size:16px;
     margin-top:auto;
     text-align:center;
     margin-bottom:20px;
 }
+
 .price-list-box .price-list-box-btn {
     font-size:16px;
     padding: 4px 25px;
     margin-top:auto;
 }
+
 /* active */
+
 .price-list-box.active {
     background: #27C7AB;
     border-color: #27C7AB;
 }
+
 .price-list-box.active .price-list-box-title {
     color:#fff;
 }
+
 .price-list-box.active .price-list-box-price {
     border-color:#27C7AB;
 }
+
 .price-list-box.active .price-list-box-price .price-cnt .price,
 .price-list-box.active .price-list-box-price .price-cnt .small,
 .price-list-box.active .price-list-box-price .price-text {
     color:#27C7AB
+
 }
 
-/* ---- section contact us ---- */
-.contact-us {}
+/*  section contact us  */
+
+.contact-us {
+
+}
+
 .contact-us-form {
     margin-top:40px;
     display: flex;
     justify-content: space-between;
 }
+
 .contact-us-form label {
     display: none;
 }
+
 .contact-us-form input[type="text"],
 .contact-us-form input[type="email"],
 .contact-us-form textarea {
@@ -346,33 +392,42 @@ body {
     font-weight: 300;
     font-size: 24px;
 }
+
 .contact-us-form textarea {
     height:195px;
     resize: none;
 }
+
 .contact-us-form ::-webkit-input-placeholder {
     color: #C9C9C9;
 }
+
 .contact-us-form ::-moz-placeholder {
     color: #C9C9C9;
 }
+
 .contact-us-form :-ms-input-placeholder {
     color: #C9C9C9;
 }
+
 .contact-us-form :-moz-placeholder {
     color: #C9C9C9;
 }
+
 .contact-us-form-left {
     width:630px;
 }
+
 .contact-us-form-right {
     width:340px;
 }
+
 .contact-us-form-img {
     display: block;
     height:210px;
     background: url(../images/red_chair.png) center top no-repeat;
 }
+
 .contact-us-form-btn {
     font-size:26px;
     padding:15px 30px;
@@ -380,25 +435,30 @@ body {
     margin-top:25px;
     width: 100%; /* albo display block */
 }
+
 .contact-us-form .checkbox-label {
     margin-top:30px;
     display: block;
     overflow: hidden;
     position: relative;
 }
+
 .contact-us-form .checkbox-label input {
     position: absolute;
     left:-1000px;
 }
+
 .contact-us-form .checkbox-label input ~ .checkbox-icon {
     width:50px;
     height:50px;
     border:1px solid #A1E6D1;
     display: inline-block;
 }
+
 .contact-us-form .checkbox-label input:checked ~ .checkbox-icon {
     background: url(../images/form_ok.jpg) center center no-repeat;
 }
+
 .contact-us-form .checkbox-label .checkbox-text {
     display: inline-block;
     width: calc(100% - 70px);
@@ -408,6 +468,7 @@ body {
 }
 
 /* footer */
+
 .page-footer {
     height: 120px;
     display: flex;
@@ -420,11 +481,16 @@ body {
     color: #a1a1a1;
 }
 
+.page-footer .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .page-footer .footer-social {
-    float: right;
+
 }
 
 .page-footer .footer-logo {
-
-
+    padding-right: 50px;
 }
