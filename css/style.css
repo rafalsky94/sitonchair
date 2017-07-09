@@ -171,6 +171,7 @@ body {
     position: absolute;
     left:0;
     top:0;
+    overflow: hidden;
 }
 
 .main-slider .main-slider-cnt .first-slide {
