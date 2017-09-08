@@ -6,6 +6,9 @@ Projekt, który robimy na warsztatach.
   
 Projekt składa się z grafik i html.
 
+# Live 
+
+https://rafalsky94.github.io/sitonchair/
 
 Struktura HTML
 --------------
